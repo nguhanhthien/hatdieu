@@ -87,16 +87,10 @@ class BackendController extends Controller
      */
     public function brand()
     {
-<<<<<<< HEAD
         $filter = $this->crud->brandsFilter();
         $grid = $this->crud->brandsGrid();
         $title = $this->crud->getBrandTable();
         return view('backend/content', compact('filter', 'grid', 'title'));
-=======
-        $grid       = $this->crud->settingsGrid();
-        $title      = 'Cài đặt';
-        return view('backend/setting', compact('grid', 'title'));
->>>>>>> deab427e6ce793a57b310572a2f536b044f29099
     }
 
     /**
@@ -106,8 +100,8 @@ class BackendController extends Controller
     public function brandsEdit()
     {
         if (request()->get('do_delete') == 1) return "not the first";
-        $edit   = $this->crud->brandsEdit();
-        $title  = $this->crud->getBrandTable();
+        $edit = $this->crud->brandsEdit();
+        $title = $this->crud->getBrandTable();
         return view('backend/content', compact('edit', 'title'));
     }
 

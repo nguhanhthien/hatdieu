@@ -91,7 +91,6 @@ class CrudRepository
      */
     public function settingForm()
     {
-<<<<<<< HEAD
         $form = \DataForm::source(Setting::find(1));
         $form->add('title','Title', 'text')->rule('required|min:10');
         $form->add('keyword','Keyword', 'text')->rule('required|min:20');
@@ -103,7 +102,6 @@ class CrudRepository
             $form->link("/backend/settings","Quay lại");
         });
         return $form;
-=======
         $filter = \DataFilter::source(new Setting());
         $filter->add('brand_id', 'ID', 'text');
         $filter->add('brand', 'Name', 'text');
@@ -111,7 +109,6 @@ class CrudRepository
         $filter->reset('reset');
         $filter->build();
         return $filter;
->>>>>>> deab427e6ce793a57b310572a2f536b044f29099
     }
 
     /**

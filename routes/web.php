@@ -113,11 +113,7 @@ Route::middleware('admin:admin')
 
         Route::get('articles/search', 'ArticlesController@search');
         Route::resource('articles', 'ArticlesController');
-<<<<<<< HEAD
-});
-=======
         Route::resource('articles', 'ArticlesController');
->>>>>>> deab427e6ce793a57b310572a2f536b044f29099
 
     });
 // File manager

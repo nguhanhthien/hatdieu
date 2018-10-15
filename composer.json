@@ -17,11 +17,7 @@
         "netshell/paypal": "dev-master",
         "orangehill/iseed": "^2.5",
         "ultraware/roles": "^5.4",
-<<<<<<< HEAD
         "unisharp/laravel-filemanager": "v1.9.0",
-=======
-        "unisharp/laravel-filemanager": "dev-master",
->>>>>>> deab427e6ce793a57b310572a2f536b044f29099
         "zofe/rapyd": "dev-master"
     },
     "require-dev": {
