@@ -484,10 +484,6 @@ a:hover, a:focus {text-decoration:none; color:#242424;}
 
 .border0 {border:0 !important;}
 
-
-
-
-
 /*-----------------------------------------------------------------------------------*/
 /*	TYPOGRAPHY
 /*-----------------------------------------------------------------------------------*/
@@ -500,7 +496,7 @@ hr {
 ul, ol {padding:0; margin:0;}
 li {padding:0; margin:0; list-style:none;}
 
-p {margin:0 0 20px;}
+p {margin:0 0 15px;}
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -1799,8 +1795,6 @@ a.add_lovelist:hover {
 	margin-right:30px;
 }
 
-
-
 /* Tovar Item */
 .tovar_img {
 	overflow:hidden;
@@ -1808,6 +1802,9 @@ a.add_lovelist:hover {
 	text-align:center;
 }
 .tovar_img img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
 	position:static;
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -2372,33 +2369,27 @@ ul.comments li ul li{
 .brands_carousel .jcarousel li a:hover {opacity:1;}
 
 
-
-
-
-
-
-
-
-
-
 /*-----------------------------------------------------------------------------------*/
 /*	SERVICES SECTION
 /*-----------------------------------------------------------------------------------*/
 .services_section {padding-top:47px;}
-
+.services_section li{
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+.services_section li i{
+  padding-right: 10px;
+}
+.services_section h1{
+  border-bottom: 1px solid #ccc;
+}
 .services_section_description p {
-	margin-top:5px;
-	margin-bottom:27px;
-	padding-right:40px;
-	font-weight:300;
-	line-height:38px;
-	font-size:30px;
 	color:#242424;
 }
 .services_section_description span {
 	display:block;
 	line-height:22px;
-	font-size:13px;
+	font-size:15px;
 	color:#666;
 }
 

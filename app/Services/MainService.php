@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Services;
 
 use App\Repositories\CategoryRepository;
@@ -87,9 +86,9 @@ class MainService
      */
     public function getHome()
     {
-        $data['brands'] = app(BrandRepository::class)->all();
-        $data['latest'] = $this->product->latest();
-        $data['products'] = $this->product->product();
+        // $data['brands']     = app(BrandRepository::class)->all();
+        $data['latest']     = $this->product->latest();
+        $data['products']   = $this->product->product();
         return $data;
     }
 

@@ -95,7 +95,7 @@ class ProductRepository extends Repository
         return $this->model->with('category')
             ->orderBy('product_id', 'desc')
             ->get()
-            ->random(6);
+            ->random(12);
     }
 
     /**

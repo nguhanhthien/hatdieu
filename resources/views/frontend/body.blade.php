@@ -16,10 +16,10 @@
                      data-animated='fadeInUp'>
 
                     <!-- BANNER -->
-                    <div class="col-lg-3 col-md-3 col-xs-6 col-ss-12">
+                    <!-- <div class="col-lg-3 col-md-3 col-xs-6 col-ss-12">
                         <a class="banner type3 margbot40" href="javascript:void(0);">
                             <img src="{{ url('images/tovar') }}/banner3.jpg" alt=""/></a>
-                    </div>
+                    </div> -->
                     <!-- //BANNER -->
 
                     @include('partials/item')
@@ -27,12 +27,12 @@
                     <div class="respond_clear_768"></div>
 
                     <!-- BANNER -->
-                    <div class="col-lg-3 col-md-3 col-xs-6 col-ss-12">
+                    <!-- <div class="col-lg-3 col-md-3 col-xs-6 col-ss-12">
                         <a class="banner type1 margbot30" href="javascript:void(0);">
                             <img src="{{ url('images/tovar') }}/banner1.jpg" alt=""/></a>
                         <a class="banner type2 margbot40" href="javascript:void(0);">
                             <img src="{{ url('images/tovar') }}/banner2.jpg" alt=""/></a>
-                    </div>
+                    </div> -->
                     <!-- //BANNER -->
 
                 </div>
@@ -118,42 +118,6 @@
         <!-- //CONTAINER -->
     </section>
     <!-- //NEW ARRIVALS -->
-
-    <!-- BRANDS -->
-    <section class="brands_carousel">
-
-        <!-- CONTAINER -->
-        <div class="container">
-            <h2>@lang('site.brands')</h2>
-            <!-- JCAROUSEL -->
-            <div class="jcarousel-wrapper">
-
-                <!-- NAVIGATION -->
-                <div class="jCarousel_pagination">
-                    <a href="javascript:void(0);" class="jcarousel-control-prev">
-                        <i class="fa fa-angle-left"></i></a>
-                    <a href="javascript:void(0);" class="jcarousel-control-next">
-                        <i class="fa fa-angle-right"></i></a>
-                </div>
-                <!-- //NAVIGATION -->
-
-                <div class="jcarousel" data-appear-top-offset='-100'
-                     data-animated='fadeInUp'>
-                    <ul>
-                        <?php $i = 1;?>
-                        @foreach ($brands as $row)
-                            <li>
-                                <a><img src="{{ url('/') }}/images/brands/{{$i++}}.jpg" alt=""/></a>
-                            </li>
-                        @endforeach
-                    </ul>
-                </div>
-            </div>
-            <!-- //JCAROUSEL -->
-        </div>
-        <!-- //CONTAINER -->
-    </section>
-    <!-- //BRANDS -->
 
     <hr class="container">
 
